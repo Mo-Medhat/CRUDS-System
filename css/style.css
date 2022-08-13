@@ -1,0 +1,9 @@
+#showAlert{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 10;
+    border: 1px solid black;
+    display: none;
+}

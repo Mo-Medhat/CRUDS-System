@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section class="w-75 m-auto ">
+
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName" class="input-group mb-3 py-2" placeholder="">
+            <label for="productPrice">Product Price</label>
+            <input type="number" id="productPrice" class="input-group mb-3 py-2" placeholder="">
+            <label for="productRate">Product Rate</label>
+            <input type="text" id="productRate" class="input-group mb-3 py-2" placeholder="">
+            <label for="productDesc">Product Description</label>
+           <textarea name="Product Description" id="productDesc" class="input-group py-2"></textarea>
+            <div class="btns d-flex mb-3">
+                <button onclick="addProduct()" class="btn btn-primary mt-3">Add Product</button>
+                <button onclick="updateValues()" id="updateProduct" disabled  class="btn btn-warning ms-3 mt-3">Update</button>
+                <button onclick="showAlertMsg()" class="btn btn-danger ms-auto mt-3">Remove Products</button>
+                <div id="showAlert" class="rounded-2 position-fixed p-4">
+                    <p class="mb-1">Are you sure you want to remove all products?</p>
+                    <div class="selectAction d-flex justify-content-evenly align-items-center p-2 ">
+                        <button onclick="cancelRemove()" class="btn btn-secondary my-1 ">Cancel</button>
+                        <button onclick="removeProducts()" class="btn btn-outline-danger my-1">Remove Products</button>
+                    </div>
+                </div>
+            </div>
+
+            <label for="productSearch">Search Product</label>
+            <input onkeyup="searchProduct(this.value)" type="search" id="productSearch" class="input-group mb-3 py-2 " placeholder="">
+
+        <table class="table mt-4">
+            <tr class="text-center">
+                <th>Index</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Rate</th>
+                <th>Product Description</th>
+                <th>Update</th>
+                <th>Remove</th>
+            </tr>
+            <tbody id="contentArea" class="text-center">
+                
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
