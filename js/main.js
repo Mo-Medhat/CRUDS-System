@@ -41,10 +41,10 @@ function displayProducts() {
         <td>${allProducts[i].productRate}</td>
         <td>${allProducts[i].productDesc}</td>
         <td>
-        <button onclick="updateProduct(${i})" class="btn btn-warning">Update</button>
+        <button onclick="updateProduct(${i})" class="btn btn-warning"><i class="fas fa-edit fa-fw"></i></button>
         </td>
         <td>
-        <button onclick="removeProduct(${i})" class="btn btn-danger">Remove</button>
+        <button onclick="removeProduct(${i})" class="btn btn-danger"><i class="fas fa-trash-alt fa-fw"></i></button>
         </td>
     </tr> `;
   }
@@ -67,10 +67,10 @@ function searchProduct(term) {
       <td>${allProducts[i].productRate}</td>
       <td>${allProducts[i].productDesc}</td>
       <td>
-      <button onclick="updateProduct(${i})" class="btn btn-warning">Update</button>
+      <button onclick="updateProduct(${i})" class="btn btn-warning"><i class="fas fa-edit fa-fw"></i></button>
       </td>
       <td>
-      <button onclick="removeProduct(${i})" class="btn btn-danger">Remove</button>
+      <button onclick="removeProduct(${i})" class="btn btn-danger"><i class="fas fa-trash-alt fa-fw"></i></button>
       </td>
   </tr> `;
     }

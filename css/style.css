@@ -1,3 +1,10 @@
+html,
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+
+}
+
 #showAlert{
     top: 50%;
     left: 50%;
@@ -6,4 +13,22 @@
     z-index: 10;
     border: 1px solid black;
     display: none;
+}
+
+#table-wrapper {
+    position:relative;
+  }
+  #table-scroll {
+    height:350px;
+    overflow:auto;
+    margin: 2rem 0;
+  }
+  #table-wrapper table {
+    width:100%;
+  }
+
+@media screen and (max-width: 540px) {
+    html, body{
+        font-size: 14px;
+    }
 }
